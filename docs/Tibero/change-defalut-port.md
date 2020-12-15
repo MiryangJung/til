@@ -1,0 +1,41 @@
+---
+layout: default
+title: Change Default Port
+parent: Tibero
+nav_order: 2
+---
+
+
+## 기본 포트 변경하기
+
+기본 포트는 `8629`로 보안상의 이유로 포트를 변경하여 사용하는 것이 좋다.
+
+```
+$ cd $TB_HOME/config
+$ vi $TB_SID.tip
+
+
+DB_NAME=tibero
+LISTENER_PORT=9999 #포트 변경
+```
+
+
+```
+$ cd $TB_HOME/client/config
+$ vi tbdsn.tbr
+
+tibero=( 
+    (INSTANCE=(HOST=localhost)
+              (PORT=9999) #포트 변경
+              (DB_NAME=tibero) 
+    ) 
+)
+```
+
+
+변경 저장 후 환경 파일을 다시 생성
+
+```
+$ cd $TB_HOME/config
+$ ./gen_tip.sh
+```
