@@ -18,8 +18,8 @@ nav_order: 4
 
 ## [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
-> Best : *0.01ms, 10.2MB* <br>
-> Worst : *3.05ms, 10.3MB*
+> Min : *0.01ms, 10.2MB* <br>
+> Max : *3.05ms, 10.3MB*
 
 ```python
 def solution(answers):
