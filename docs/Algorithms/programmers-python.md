@@ -92,3 +92,26 @@ def solution(n, lost, reserve):
 ```
 
 *2020.12.16*
+
+
+
+## [2016년](https://programmers.co.kr/learn/courses/30/lessons/12901)
+
+> Min : *0.00ms, 10MB* <br>
+> Max : *0.01ms, 10.3MB*
+
+```python
+def solution(a, b):
+    
+    day = ["THU","FRI","SAT","SUN","MON","TUE","WED"]
+    month = [31,29,31,30,31,30,31,31,30,31,30,31]
+    
+    s = 0
+    
+    for i in range(0,a-1):
+        s += month[i]
+    
+    return day[(s+b)%7]
+```
+
+*2020.12.16*
