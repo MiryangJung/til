@@ -68,3 +68,15 @@ func max(a, b int) int {
 ```
 
 *2020.12.16*
+
+
+## [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+
+> Min : *0.01ms, 10MB* <br>
+> Max : *0.01ms, 10.3MB*
+
+```go
+
+```
+
+*2020.12.16*

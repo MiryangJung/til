@@ -47,3 +47,22 @@ def solution(answers):
 ```
 
 *2020.12.16*
+
+
+## [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
+
+> Min : *0.01ms, 10MB* <br>
+> Max : *0.01ms, 10.3MB*
+
+```python
+def solution(array, commands):
+    answer = []
+    for c in commands:
+        answer.append((sorted(array[c[0]-1:c[1]]))[c[2]-1])
+    return answer
+```
+
+*2020.12.16*
+
+
+## 
