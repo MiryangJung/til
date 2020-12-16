@@ -5,7 +5,7 @@ parent: Algorithms
 nav_order: 3
 ---
 
-# [LeetCode](https://leetcode.com) __Go__ 언어 풀이
+# [LeetCode](https://leetcode.com) Easy __Go__ 언어 풀이
 {: .no_toc }
 
 ## Table of contents

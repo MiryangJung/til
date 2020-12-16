@@ -17,9 +17,9 @@ permalink: docs/algorithms
         - 2020.11.26 ~ 2020.12.15
     
 - [프로그래머스](https://programmers.co.kr/)
-    - __GO__ *LEVEL 1* [풀이]()
+    - __GO__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-go/)
         - 2020.12.16 ~
-    - __PYTHON__ *LEVEL 1* [풀이]() 
+    - __PYTHON__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-python/)
         - 2020.12.16 ~
     
     
