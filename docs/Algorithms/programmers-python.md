@@ -65,4 +65,30 @@ def solution(array, commands):
 *2020.12.16*
 
 
-## 
+## [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+
+> Min : *0.01ms, 10.1MB* <br>
+> Max : *0.01ms, 10.3MB*
+
+```python
+def solution(n, lost, reserve):  
+    arr = [1]*(n+1)
+    
+    for n in lost:
+        arr[n]=0
+    for n in reserve:
+        arr[n]+=1
+    for i in range(1,len(arr)-1):
+        if arr[i]==0 and arr[i-1]==2:
+            arr[i]=1
+            arr[i-1]=1
+        elif arr[i]==0 and arr[i+1]==2:
+            arr[i]=1
+            arr[i+1]=1
+            
+    answer = arr.count(1) + arr.count(2) -1
+    
+    return answer
+```
+
+*2020.12.16*
