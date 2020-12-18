@@ -115,3 +115,134 @@ def solution(a, b):
 ```
 
 *2020.12.16*
+
+
+## [가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)
+
+> Min : *0.00ms, 10MB* <br>
+> Max : *0.00ms, 10.2MB*
+
+```python
+def solution(s):
+    answer = s[len(s)//2-1+len(s)%2:len(s)//2+1]
+    return answer
+```
+
+*2020.12.16*
+
+## [나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+
+> Min : *0.01ms, 10MB* <br>
+> Max : *2.88ms, 13.4MB*
+
+```python
+def solution(arr, divisor):
+    answer = []
+    
+    for n in arr:
+        if not n%divisor:
+            answer.append(n)
+    
+    return sorted(answer) if answer else [-1]
+```
+
+*2020.12.17*
+
+## [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *319.92ms, 10.2MB*
+
+```python
+def solution(a, b):
+    return sum(range(min(a,b),max(a,b)+1))
+```
+
+*2020.12.18*
+
+## [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
+
+> Min : *0.00ms, 10.2MB*   
+> Max : *0.02ms, 10.2MB*
+
+```python
+def solution(strings, n):
+    return sorted(sorted(strings), key=lambda s:s[n])
+```
+
+*2020.12.18*
+
+## [문자열 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12917)
+
+> Min : *0.01ms, 10.2MB*   
+> Max : *0.07ms, 10.1MB*
+
+```python
+def solution(s):
+    return ''.join(sorted(s,reverse=True))
+```
+
+*2020.12.18*
+
+## [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.01ms, 10.4MB*
+
+```python
+def solution(s):
+    return s.isdecimal() and len(s)==4 or len(s)==6
+```
+
+*2020.12.18*
+
+## [서울에서 김서방 찾기](https://programmers.co.kr/learn/courses/30/lessons/12919)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.01ms, 10.2MB*
+
+```python
+def solution(seoul):
+    return "김서방은 " + str(seoul.index("Kim")) + "에 있다"
+```
+
+*2020.12.18*
+
+## [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.00ms, 10.2MB*
+
+```python
+def solution(n):
+    return "수박"*(n//2)+"수박"[:n%2]
+```
+
+*2020.12.18*
+
+## [문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)
+
+> Min : *0.01ms, 10.3MB*   
+> Max : *0.02ms, 10.4MB*
+
+```python
+def solution(s):
+    return int(s)
+```
+
+*2020.12.18*
+
+## [내적](https://programmers.co.kr/learn/courses/30/lessons/70128
+
+> Min : *0.01ms, 10.2MB*   
+> Max : *0.18ms, 10.2MB*
+
+```python
+def solution(a, b):
+    answer = 0
+    for i in range(len(a)):
+        answer += a[i]*b[i]
+    return answer
+```
+
+*2020.12.18*
