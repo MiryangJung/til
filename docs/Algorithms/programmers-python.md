@@ -246,3 +246,172 @@ def solution(a, b):
 ```
 
 *2020.12.18*
+
+## [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+
+> Min : *0.01ms, 10.1MB*   
+> Max : *2.09ms, 10.2MB*
+
+```python
+def solution(s, n):
+    answer = ''
+    for x in s:
+        y = ord(x)+n
+        if x == " ":
+            answer += " "
+        elif x.islower() and y > 122:
+            answer += chr(y-122+96)
+        elif x.isupper() and y > 90:
+            answer += chr(y-90+64)
+        else:
+            answer += chr(y)
+    return answer
+```
+
+*2020.12.21*
+
+
+## [약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)
+
+> Min : *0.00ms, 10.2MB*   
+> Max : *0.02ms, 10.3MB*
+
+```python
+def solution(n):
+    if n <= 1:
+        return n
+    
+    answer = 1+n
+    for i in range(2, int(n**0.5)+1):
+        if n%i==0:
+            answer += i + n//i
+            if i == n//i:
+                answer -=i
+    return answer
+```
+
+*2020.12.21*
+
+
+## [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
+
+> Min : *0.01ms, 10.1MB*   
+> Max : *0.04ms, 10.3MB*
+
+```python
+def solution(s):
+    answer = ''
+    cnt = 0
+    for e in s:
+        if e == " ":
+            cnt=-1
+            answer += " "
+        elif cnt%2:
+            answer += e.lower()
+        else:
+            answer += e.upper()
+        cnt+=1
+    return answer
+```
+
+*2020.12.21*
+
+
+## [자릿수 더하기](https://programmers.co.kr/learn/courses/30/lessons/12931)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.00ms, 10.2MB*
+
+```python
+def solution(n):
+    answer = 0
+    
+    while n>9:
+        answer += n%10
+        n//=10
+
+    return answer+n
+```
+
+*2020.12.21*
+
+
+## [자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.00ms, 10.2MB*
+
+```python
+def solution(n):
+    answer = []
+    
+    while n!=0:
+        answer.append(n%10)
+        n//=10
+
+    return answer
+```
+
+*2020.12.21*
+
+
+## [정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
+
+**sorted** 반환값은 리스트이므로 `list()` 를 사용하지 않아도 된다.
+
+> Min : *0.02ms, 10.2MB*   
+> Max : *0.03ms, 10.4MB*
+
+```python
+
+def solution(n):
+#   return int(''.join(sorted(list(str(n)),reverse=True)))
+    return int(''.join(sorted(str(n),reverse=True)))
+```
+
+*2020.12.21*
+
+
+## [정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)
+
+> Min : *0.01ms, 10.2MB*   
+> Max : *0.02ms, 10.3MB*
+
+```python
+def solution(n):
+    sqrt = n**0.5
+    return (sqrt+1)**2 if not sqrt%1 else -1
+```
+
+*2020.12.21*
+
+
+## [제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.96ms, 16.8MB*
+
+```python
+def solution(arr):
+    if arr[0]==10:
+        return [-1]
+    arr.remove(min(arr))
+    return arr
+```
+
+*2020.12.21*
+
+
+## [짝수와 홀수](https://programmers.co.kr/learn/courses/30/lessons/12937)
+
+> Min : *0.00ms, 10MB*   
+> Max : *0.00ms, 10.3MB*
+
+```python
+def solution(num):
+    return "Odd" if num%2 else "Even"
+```
+
+*2020.12.21*
+
+
