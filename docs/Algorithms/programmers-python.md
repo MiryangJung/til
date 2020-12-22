@@ -415,3 +415,142 @@ def solution(num):
 *2020.12.21*
 
 
+## [최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)
+
+> Min : *0.01ms, 10.1MB*   
+> Max : *0.16ms, 10.2MB*
+
+```python
+def solution(n, m):
+    x = 0
+    
+    for i in range(min(n,m),0,-1):
+        if not n%i and not m%i:
+            x=i
+            break
+            
+    return [x,x*(n/x)*(m/x)]
+```
+
+*2020.12.22*
+
+
+## [콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
+
+> Min : *0.00ms, 10.2MB*   
+> Max : *0.17ms, 10.3MB*
+
+```python
+def solution(num):
+    cnt = 0
+    while num != 1:
+        cnt+=1
+        if cnt == 500:
+            return -1
+        if num%2:
+            num = num*3 + 1
+        else:
+            num/=2
+        
+    return cnt
+```
+
+*2020.12.22*
+
+
+## [평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.01ms, 10.2MB*
+
+```python
+def solution(arr):
+    return sum(arr)/len(arr)
+```
+
+*2020.12.22*
+
+
+## [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.00ms, 10.3MB*
+
+```python
+def solution(x):
+    xx = x
+    sum = 0
+    while xx:
+        sum+=xx%10
+        xx//=10
+    
+    return True if not x%sum else False
+```
+
+*2020.12.22*
+
+
+## [핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.00ms, 10.3MB*
+
+```python
+def solution(phone_number):
+    return '*'*(len(phone_number)-4)+phone_number[-4:]
+```
+
+*2020.12.22*
+
+
+## [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
+
+> Min : *0.01ms, 10.2MB*   
+> Max : *32.24ms, 22.9MB*
+
+```python
+def solution(arr1, arr2):
+    answer = []
+    
+    for i in range(len(arr1)):
+        arr=[]
+        for j in range(len(arr1[i])):
+            arr.append(arr1[i][j]+arr2[i][j])
+        answer.append(arr)
+        
+    return answer
+```
+
+*2020.12.22*
+
+
+## [x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954)
+
+> Min : *0.00ms, 10.1MB*   
+> Max : *0.22ms, 10.4MB*
+
+```python
+def solution(x, n):
+    answer = [x]
+    
+    for i in range(1,n):
+        answer.append(x+x*i)
+    
+    return answer
+```
+
+*2020.12.22*
+
+
+## [직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)
+
+> Min : *12.60ms, 7.55MB*   
+> Max : *15.87ms, 7.48MB*
+
+```python
+a, b = map(int, input().strip().split(' '))
+
+print(('*'*a+'\n')*b)
+```
+
+*2020.12.22*
