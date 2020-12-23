@@ -17,10 +17,14 @@ permalink: docs/algorithms
         - 2020.11.26 ~ 2020.12.15
     
 - [프로그래머스](https://programmers.co.kr/)
-    - __GO__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-go/)
-        - 2020.12.16 ~
-    - __PYTHON__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-python/)
-        - 2020.12.16 ~
+    - 레벨 1
+        - __GO__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-level1-go/)
+            - 2020.12.16 ~ 
+        - __PYTHON__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-level1-python/)
+            - 2020.12.16 ~ 2020.12.22
+    - 레벨 2
+        - __PYTHON__ [풀이](https://til.miryang.dev/docs/Algorithms/programmers-level2-python/)
+            - 2020.12.23 ~ 
     
     
 - [데일리알고리즘](https://github.com/MiryangJung/DailyAlgorithm)

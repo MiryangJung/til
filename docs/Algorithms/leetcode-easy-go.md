@@ -2,7 +2,6 @@
 layout: default
 title: LeetCode easy, Golang
 parent: Algorithms
-nav_order: 3
 ---
 
 # [LeetCode](https://leetcode.com) Easy __Go__ 언어 풀이

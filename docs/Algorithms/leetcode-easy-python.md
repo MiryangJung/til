@@ -2,7 +2,6 @@
 layout: default
 title: LeetCode easy, Python
 parent: Algorithms
-nav_order: 4
 ---
 
 # [LeetCode](https://leetcode.com) Easy __Python__ 언어 풀이

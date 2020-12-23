@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Programmers, Python
+title: Programmers Level 1, Python
 parent: Algorithms
-nav_order: 4
 ---
 
-# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __Python__ 언어 풀이
+# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __Python__ 언어 레벨1 풀이
 {: .no_toc }
 
 ## Table of contents
