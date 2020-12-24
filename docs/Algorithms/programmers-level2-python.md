@@ -130,13 +130,15 @@ def solution(w,h):
 
 
 
-## []()
+## [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
 
-> Min : **   
-> Max : **
+> Min : *0.00ms, 10.1MB*   
+> Max : *55.54ms, 28.1MB*
 
 ```python
-
+def solution(numbers):
+    if sum(numbers) == 0:return "0"
+    return ''.join((sorted(list(map(str,numbers)),key=lambda x:x*3,reverse=True)))
 ```
 
 *2020.12.23*
