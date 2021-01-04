@@ -139,7 +139,7 @@ $ ./system.sh
 
 ```
 $ firewall-cmd --permanent --zone=public --add-port=8629/tcp
-$ firewall-cmd --relaod
+$ firewall-cmd --reload
 $ firewall-cmd --zone=public --list-all
 ```
 
