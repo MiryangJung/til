@@ -145,13 +145,51 @@ def solution(numbers):
 
 
 
-## []()
+## [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883)
 
-> Min : **   
-> Max : **
+> Min : *0.01ms, 10.2MB*  
+> Max : *238.67ms, 15MB*
 
 ```python
-
+def solution(number, k):
+    answer=[number[0]]
+    i=0
+    while i!=len(number)-1:
+        i+=1
+        answer.append(number[i])
+        if number[i]>answer[-2]:
+            for j in range(len(answer)-1,0,-1):
+                if k==0: break
+                if answer[j]>answer[j-1]:
+                    answer.pop(j-1)
+                    k-=1
+                else: break
+    return ''.join(answer[:len(answer)-k])
 ```
 
-*2020.12.23*
+*2020.01.13*
+
+
+
+## [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
+
+> Min : *0.01ms, 9.98MB*  
+> Max : *0.01ms, 10.3MB*
+
+```python
+def solution(clothes):
+    dic = {}
+    res = 1
+    for c in clothes:
+        if c[1] in dic:
+            dic[c[1]]+=1
+        else:
+            dic[c[1]]=1
+
+    for key in dic:
+        res *= (dic[key] + 1)
+        
+    return res-1
+```
+
+*2020.01.13*
