@@ -193,3 +193,24 @@ def solution(clothes):
 ```
 
 *2020.01.13*
+
+
+
+## [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
+
+> Min : *0.00ms, 10MB*  
+> Max : *0.20ms, 10.2MB*
+
+```python
+def solution(brown, yellow):
+    x,y = (brown+yellow),2
+    while x > y:
+        y +=1
+        if not (brown+yellow)%y:
+            x = (brown+yellow)/y
+            if (x-2)*(y-2)==yellow:
+                return [x,y]
+    return [x,y]
+```
+
+*2020.01.13*
