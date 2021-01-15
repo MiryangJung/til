@@ -4,7 +4,7 @@ title: Programmers Level 1, Python
 parent: Algorithms
 ---
 
-# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __Python__ 언어 레벨1 풀이
+# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __파이썬__ 언어 레벨1 풀이
 {: .no_toc }
 
 ## Table of contents
@@ -231,9 +231,9 @@ def solution(s):
 
 *2020.12.18*
 
-## [내적](https://programmers.co.kr/learn/courses/30/lessons/70128
+## [내적](https://programmers.co.kr/learn/courses/30/lessons/70128)
 
-> Min : *0.01ms, 10.2MB*   
+> Min : *0.01ms, 10.2MB*  
 > Max : *0.18ms, 10.2MB*
 
 ```python

@@ -4,10 +4,12 @@ title: Programmers Level 2, Python
 parent: Algorithms
 ---
 
-# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __Python__ 언어 레벨2 풀이
+# [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __파이썬__ 언어 레벨2 풀이
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -214,3 +216,45 @@ def solution(brown, yellow):
 ```
 
 *2020.01.13*
+
+
+## [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
+
+> Min : *0.48ms, 10.2MB*  
+> Max : *379.25ms, 10.1MB*
+
+```python
+answer = 0
+def solution(numbers, target):
+    def func(i,s):
+        global answer
+        if i == len(numbers)-1:
+            if s == target:
+                answer+=1
+        else:
+            func(i+1,s-numbers[i+1])
+            func(i+1,s+numbers[i+1])
+    func(-1,0)
+    return answer 
+```
+
+*2020.01.14*
+
+
+## [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
+
+> Min : *0.01ms, 10.1MB*  
+> Max : *0.68ms, 10.3MB*
+
+```python
+def solution(s):
+    c,r=0,0
+    while s!='1':
+        o = s.count("0")
+        c += o
+        s = bin(len(s)-o)[2:]
+        r += 1
+    return [r,c]
+```
+
+*2020.01.14*
