@@ -5,11 +5,9 @@ parent: Algorithms
 ---
 
 # [프로그래머스](https://programmers.co.kr/learn/challenges?tab=all_challenges) __파이썬__ 언어 레벨2 풀이
-
 {: .no_toc }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC
@@ -258,3 +256,50 @@ def solution(s):
 ```
 
 *2020.01.14*
+
+
+## [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
+
+> Min : *0.02ms, 10.3MB*  
+> Max : *0.05ms, 10.4MB*
+
+```python
+def solution(s):
+    s=list(map(int,s.split()))
+    return str(min(s))+" "+str(max(s))
+```
+
+*2020.01.18*
+
+
+## [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
+
+> Min : *0.01ms, 10.2MB*  
+> Max : *494.27ms, 456MB*
+
+```python
+def solution(n):
+    numbers=[0]*(n+1)
+    numbers[1]=1
+    for i in range(2,n+1):
+        numbers[i]=numbers[i-2]+numbers[i-1]
+    return (numbers[-1])%1234567
+```
+
+> Min : *0.00ms, 10.2MB*  
+> Max : *141.43ms, 10.2MB*
+
+```python
+def solution(n):
+    x,y=0,1
+    for i in range(2,n+1):
+        x,y=y,x+y
+    return y%1234567
+```
+
+*2020.01.18*
+
+
+
+
+
