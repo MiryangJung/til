@@ -21,6 +21,7 @@ D:\>cd test
 ## 레드햇에서 마운트하기
 
 ```
+sudo mount -t cifs 윈도우경로 리눅스경로 -o username=윈도우계정아이디,password=윈도우계정비밀번호
 sudo mount -t cifs //192.168.0.1/test /home/miryang/test -o username=miryang,password=123
 ```
 
