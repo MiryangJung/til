@@ -300,6 +300,18 @@ def solution(n):
 *2020.01.18*
 
 
+## [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
+ 
+> Min : *0.01ms, 10.2MB* (정확성 테스트), *60.97ms, 17.1MB* (효율성 테스트)   
+> Max : *1.19ms, 10.2MB* (정확성 테스트), *122.11ms, 19.5MB* (효율성 테스트)
 
-
-
+```python
+def solution(prices):
+    answer = []
+    for i in range(len(prices)):
+        for j in range(i+1,len(prices)):
+            if prices[j]<prices[i]:
+                break
+        answer.append(j-i)
+    return answer
+```
