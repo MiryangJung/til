@@ -167,7 +167,7 @@ def solution(number, k):
     return ''.join(answer[:len(answer)-k])
 ```
 
-*2020.01.13*
+*2021.01.13*
 
 
 
@@ -192,7 +192,7 @@ def solution(clothes):
     return res-1
 ```
 
-*2020.01.13*
+*2021.01.13*
 
 
 
@@ -213,7 +213,7 @@ def solution(brown, yellow):
     return [x,y]
 ```
 
-*2020.01.13*
+*2021.01.13*
 
 
 ## [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
@@ -236,7 +236,7 @@ def solution(numbers, target):
     return answer 
 ```
 
-*2020.01.14*
+*2021.01.14*
 
 
 ## [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
@@ -255,7 +255,7 @@ def solution(s):
     return [r,c]
 ```
 
-*2020.01.14*
+*2021.01.14*
 
 
 ## [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
@@ -269,7 +269,7 @@ def solution(s):
     return str(min(s))+" "+str(max(s))
 ```
 
-*2020.01.18*
+*2021.01.18*
 
 
 ## [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
@@ -297,7 +297,7 @@ def solution(n):
     return y%1234567
 ```
 
-*2020.01.18*
+*2021.01.18*
 
 
 ## [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
@@ -315,3 +315,5 @@ def solution(prices):
         answer.append(j-i)
     return answer
 ```
+
+*2021.02.10*
