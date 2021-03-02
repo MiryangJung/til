@@ -553,3 +553,57 @@ print(('*'*a+'\n')*b)
 ```
 
 *2020.12.22*
+
+
+## [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
+
+> Min : *0.19ms, 10.2MB*
+> Max : *0.39ms, 10.2MB*
+
+```python
+import re
+
+def solution(new_id):
+    new_id = new_id.lower()
+    new_id = re.sub('[^a-z0-9\-\_\.]','',new_id)
+    new_id = re.sub('[\.]+','.',new_id)
+    if new_id and new_id[0] == '.':
+        new_id=new_id[1:]
+    if new_id and new_id[-1] == '.':
+        new_id=new_id[:-1]
+    if not new_id:
+        new_id='a'
+    if len(new_id)>=16:
+        if new_id[14] == '.':
+            new_id=new_id[:14]
+        else:
+            new_id=new_id[:15]
+    elif len(new_id)<=2:
+        while len(new_id)!=3:
+            new_id+=new_id[-1]
+    return new_id
+```
+
+> Min : *0.27ms, 10.2MB*
+> Max : *0.92ms, 10.2MB*
+
+```python
+import re
+
+def solution(new_id):
+    new_id = new_id.lower()
+    new_id = re.sub('[^a-z0-9\-\_\.]','',new_id)
+    new_id = re.sub('[\.]+','.',new_id)
+    new_id = re.sub('^[.]|[.]$', '', new_id)
+    if not new_id:
+        new_id='a'
+    else:
+        new_id=new_id[:15]
+    new_id = re.sub('^[.]|[.]$', '', new_id)
+    if len(new_id)<=2:
+        while len(new_id)!=3:
+            new_id+=new_id[-1]
+    return new_id
+```
+
+*2021.02.19*
