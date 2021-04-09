@@ -3,6 +3,16 @@ layout: default
 title: 인프런 팀 개발을 위한 Git, GitHub 입문 강의 노트
 parent: Git
 ---
+# 인프런 팀 개발을 위한 Git, GitHub 입문 강의 노트
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+   {:toc}
+
+---
 
 > [팀 개발을 위한 Git, GitHub 입문](https://inf.run/pr3d) 강의 노트
 
