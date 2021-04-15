@@ -13,7 +13,7 @@ https://golang.org/
 {: .fs-6 .fw-300 }
 
 
-### 기초
+### 강의
 
 - [x] [노마드코더 - 쉽고 빠른 Go 시작하기](https://nomadcoders.co/go-for-beginners) 수강
     - 2020.09.16 ~ 2020.09.18
