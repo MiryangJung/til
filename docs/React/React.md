@@ -14,5 +14,5 @@ permalink: docs/react
 
 ### 강의
 
-- [x] [코딩앙마 초보자를 위한 ReactJS 강의노트](https://youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-) 수강
+- [x] [코딩앙마 초보자를 위한 ReactJS 강의노트](https://youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-) 수강  
     - 2021-04-15

@@ -11,14 +11,12 @@ parent: React
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
 >  [코딩앙마 초보자를 위한 ReactJS](https://youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
 
-
-# 개발 환경 구성
 
 ## 설치해야할 것들
 
