@@ -18,14 +18,14 @@ parent: React
 >  [코딩앙마 초보자를 위한 ReactJS](https://youtube.com/playlist?list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
 
 
-## 개발 환경 구성
+# 개발 환경 구성
 
-### 설치해야할 것들
+## 설치해야할 것들
 
 - node.js
 
 
-### react 앱 만들기
+## react 앱 만들기
 
 create-react-app : React 웹 개발용 Boilerplate
 
@@ -35,7 +35,7 @@ npm start
 ```
 
 
-### 컴포넌트
+# 컴포넌트
 
 __component/Hello.js__
 
@@ -98,7 +98,7 @@ export default function World(){
 }
 ```
 
-### CSS
+# CSS
 
 - 인라인 스타일
 
@@ -142,7 +142,7 @@ export default function Hello(){
 ```
 
 
-### 이벤트 처리
+# 이벤트 처리
 
 
 __Hello.js__
@@ -163,7 +163,7 @@ export default function Hello(){
 }
 ```
 
-### state, useState
+# state, useState
 
 ```
 const [상태 값 저장 변수, 상태 값 갱신 함수] = useState(초기값);
@@ -202,7 +202,7 @@ __App.js__
 ```
 
 
-### props
+# props
 
 __App.js__
 
@@ -253,7 +253,7 @@ export default function Hello(props){
 }
 ```
 
-### 더미 데이터
+# 더미 데이터
 
 __db/data.json__
 
@@ -290,7 +290,7 @@ export default function DayList(){
 }
 ```
 
-### map
+# map
 
 ```
 import dummy from "../db/data.json"
@@ -307,7 +307,7 @@ export default function DayList(){
 }
 ```
 
-### react-router-dom
+# react-router-dom
 
 ```
 npm install  react-router-dom
@@ -430,3 +430,39 @@ export default function Header(){
 }
 ```
 
+
+# Json-server
+
+```
+npm install -g json-server
+json-server --watch ./src/db/data.json --port 3001
+```
+
+# useEffect
+
+컴포넌트 렌더링 이후에 일을 수행
+
+한 번만 실행하고자 할 땐 빈배열 전달
+
+```
+useEffect(()=>{...}, []);
+```
+
+# useRef
+
+ref 객체 반환
+
+```
+const inputEl = useRef(null);
+<input ref={inputEl} type="text" />
+```
+
+# useHistory
+
+페이지 이동
+
+# ts 적용
+
+```
+npm install typescript @types/node @types/react @types/react-dom @types/jest
+```
