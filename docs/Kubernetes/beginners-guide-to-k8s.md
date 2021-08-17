@@ -22,7 +22,7 @@ parent: Kubernetes
 
 ### minikube 설치
 
-1. `minikube` 다운 및 설치
+1. `minikube` 다운 및 설치  
    - 쿠버네티스는 최소 3대의 마스터 서버와 n개의 노드 서버가 필요
    - 개발 테스트를 위해 구축하기엔 무리가 있음
    - 로컬 쿠버네티스를 빠르게 설정해주는 도구
@@ -59,10 +59,15 @@ parent: Kubernetes
 
 쿠버네티스 CLI 도구
 
-1. `kubectl` 설치 (윈도우)
+1. `kubectl` 설치  
+   - 윈도우  
     ```
     C:\kube> curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.20.0/bin/windows/amd64/kubectl.exe
     ```
+   - 맥  
+   ```
+   brew install kubectl
+   ```
 2. 환경 변수에 **C:\kube** 추가
 3. `kubectl` 버전 확인
    ```
